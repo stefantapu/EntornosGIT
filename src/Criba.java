@@ -1,6 +1,19 @@
 import java.util.Scanner;
 
+/**
+ *
+ *La clase Criba contiene un método para generar números primos hasta un número máximo dado.
+ *
+ */
 public class Criba {
+
+    /**
+
+     Genera un array de números primos hasta el número máximo especificado.
+     @param max El número máximo hasta el cual se generarán los números primos.
+     @return Un array de enteros que contiene todos los números primos hasta el número máximo especificado.
+
+     */
     public static int[] generarPrimos(int max) {
         if (max < 2) {
             return new int[0];
@@ -38,6 +51,11 @@ public class Criba {
         return primos;
     }
 
+    /**
+
+     El método principal de la clase, que solicita al usuario un número máximo para generar los números primos correspondientes y los muestra en la consola.
+
+     */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Introduce el número para la criba de Eratóstenes: ");
